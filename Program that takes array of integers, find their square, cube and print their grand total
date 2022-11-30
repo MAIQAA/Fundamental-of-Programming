@@ -1,0 +1,39 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int s;
+	cout<<"Enter the Size : ";
+	cin>>s;
+	int n[s],sq[s],c[s],sum[s],t=0,i;
+	for(i=0;i<=s;i++)
+	{
+		n[i]=i;
+		sq[i]=i*i;
+		c[i]=i*i*i;
+		sum[i]=	n[i]+sq[i]+c[i];
+	}
+	cout<<"Numbers : \t";
+	for(i=0;i<=s;i++)
+	{
+		cout<<n[i]<<"\t";
+	}
+	cout<<"\nSquare : \t";
+	for(i=0;i<=s;i++)
+	{
+		cout<<sq[i]<<"\t";
+	}
+	cout<<"\nCube :  \t";
+	for(i=0;i<=s;i++)
+	{
+		cout<<c[i]<<"\t";
+	}
+	cout<<"\nSum :   \t";
+	for(i=0;i<=s;i++)
+	{
+	cout<<sum[i]<<"\t";
+	t=t+sum[i];
+	}
+	cout<<"\nGrand Total : "<<t<<endl;
+}
