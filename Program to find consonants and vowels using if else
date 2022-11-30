@@ -1,0 +1,19 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+ char ch;
+ int lowercase_vowel, uppercase_vowel;
+ cout<<"Enter the alphabetical character = ";
+ cin>>ch;
+  lowercase_vowel= (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u');
+  uppercase_vowel=(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U');
+  if (!isalpha(ch))
+      cout<<"Error! Non-alphabetic character."<<endl;
+   else if (lowercase_vowel || uppercase_vowel)
+      cout<<"It is a vowel."<<endl;
+   else
+      cout<<"It is a consonant."<<endl;
+
+}
