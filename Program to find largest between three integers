@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"A Enter your Age :"<<endl;
+	cin>>a;
+	cout<<"B Enter your Age :"<<endl;
+	cin>>b;
+	cout<<"C Enter your Age :"<<endl;
+	cin>>c;
+  
+	if(a>b && a>c)
+	 cout<<"A is the Oldest"<<endl;
+	else if(b>a && b>c)
+	 cout<<"B is the Oldest"<<endl;
+	else if(c>a && c>b)
+	cout<<"C is  the Oldest"<<endl;
+	 if(a<b && a<c)
+	 cout<<"A is youngest"<<endl;
+	else if(b<a && b<c)
+	 cout<<"B is youngest"<<endl;
+	else if(c<a && c<b)
+	 cout<<"C is youngest"<<endl;
+   
+	return 0; 
+} 
