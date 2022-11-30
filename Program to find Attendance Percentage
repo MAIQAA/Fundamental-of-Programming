@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int h,a;
+	float p;
+	cout<<"Enter the number of classes held :"<<endl;
+	cin>>h;
+	cout<<"Enter the number of classes attended :"<<endl;
+	cin>>a;
+	p=(a*100)/h;
+	cout<<"Your attendance percentage is :"<<p<<endl;
+	if(p<80)
+	cout<<"You can not sit in exams"<<endl;
+	else if(p>=80)
+	cout<<"You can sit in exams"<<endl;
+}
