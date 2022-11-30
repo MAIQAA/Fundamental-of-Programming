@@ -1,0 +1,97 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	double a,b,c;
+	float temp;
+	int n,grade;
+    cout<<"Please Choose which Action you want to Perform."<<endl;
+    cout<<"Enter 1 to Find Largest"<<endl;
+    cout<<"Enter 2 to Find Even or Ddd"<<endl;
+    cout<<"Enter 3 to Find Condition of Water"<<endl;
+    cout<<"Enter 4 to find Grade of a Student"<<endl;
+    cin>>n;
+    cout<<"\n";
+    
+    switch(n)
+    {
+	case 1:
+    	cout<<"Find Largest among three numbers"<<endl;
+    	cout<<"To perform the action Please Enter Three numbers"<<endl;
+        cout<<"A = ";
+        cin>>a;
+        cout<<"B = ";
+        cin>>b;
+        cout<<"C = ";
+        cin>>c;
+        cout<<"\n";
+	       {
+	        if(a>b && a>c)
+	        cout<<"A is largest number"<<endl;
+	        else if(b>a && b>c)
+	        cout<<"B is largest number"<<endl;
+	        else if(c>a && c>b)
+	        cout<<"C is largest number"<<endl;
+	       } 
+       break;
+       
+       
+       case 2:
+       	cout<<"Find even or odd"<<endl;
+       	cout<<"To perform  this  action  Please  Enter The Number"<<endl;
+       	cout<<"Number is :";
+       	cin>>n;
+       	cout<<"\n";
+       	switch(n % 2)
+       	   {
+       	   	case 0: cout<<"Number is even"<<endl;
+       	   	        break;
+       	   	case 1: cout<<"Number is odd"<<endl;
+       	   	break;
+			}
+		break;	
+		
+		case 3:	
+			cout<<"Find condition of water"<<endl;
+			cout<<"Enter the temperature :"<<endl;
+			cin>>temp;
+			switch(temp<=0)
+			{
+				case 1: cout<<"Ice"<<endl;
+				break;
+			}
+			switch(temp>=1 && temp<=100)
+			{
+				case 2: cout<<"Water"<<endl;
+				break;
+			}
+			switch(temp>=101)
+			{
+				case 3: cout<<"Steam"<<endl;
+				break;
+			}
+		break;	
+	
+			 
+			 
+		case 4: 
+		    cout<<"Find grade of student"<<endl;
+		    cout<<"Enter your marks :"<<endl;
+		    cin>>grade;
+		    switch(grade / 10)
+		    {
+		    	case 5: cout<<"Grade A"<<endl;
+		    	break;
+		    	case 6: cout<<"Grae B"<<endl;
+		    	break;
+		    	case 7: cout<<"Grade B-"<<endl;
+		    	break;
+		    	case 8: cout<<"Grade C"<<endl;
+		    	break;
+			}
+		break;	
+			  
+			  
+    }
+         
+}
