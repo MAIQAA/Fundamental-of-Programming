@@ -1,0 +1,24 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+ char emp[15][5], j='null';
+ int hr=0;
+ int hw=0;
+ int s=0;
+ for (int i= 0;i<5;i++)
+ {
+ cout<<"Please Enter the Name of the Employee : ";
+ cin>>emp[j];
+ cout<<"Please Enter the number of hours of the Employee [" << i << "] : ";
+ cin>>hw;
+ cout<<"Please Enter the hour's rate on the basis of the salary : ";
+ cin>>hr;
+ s=hr*hw;
+ cout<<"Name of the Employee[" << i << "]: " << emp[j] << endl;
+ cout<< "The Salary of the Employee [" << i << "]: " << s<< endl;
+ cout<< endl;
+ }
+}
