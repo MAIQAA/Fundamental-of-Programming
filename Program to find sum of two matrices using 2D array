@@ -1,0 +1,78 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a[2][2];
+	int b[2][2];
+	int sum;
+	cout<<"Enter all elements of array"<<endl<<endl;
+	
+	cout<<"Enter Elements of 1st matrix : "<<endl;
+	for (int i=0;i<2;i++)
+	{
+		for(int j=0 ; j<2;j++)
+		{
+		cin>>a[i][j];
+	    }
+	    cout<<endl;
+	}	
+		for (int i=0;i<2;i++)
+	{
+		for(int j=0 ; j<2;j++)
+		{
+		cout<<a[i][j]<<"\t";
+	    }
+	    cout<<endl<<endl;
+	}
+	
+	
+	cout<<"Enter Elements of 2nd Matrix : "<<endl;
+	
+		for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<2;j++)
+		{
+			cin>>b[i][j];
+		}
+		cout<<endl;
+	}
+		for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<2;j++)
+		{
+			cout<<b[i][j]<<"\t";
+		}
+		cout<<endl<<endl;
+	}
+	    cout<<"\nFirst Matrix\n";
+     for(int i=0;i<2;i++){
+    for (int j=0;j<2;j++){
+        
+        cout<<a[i][j]<<"\t";
+
+    }
+    cout<<endl<<endl;
+    }
+    
+    
+    cout<<"\nSecond Matrix\n";
+    for(int i=0;i<2;i++)
+	{
+    for (int j=0;j<2;j++)
+	{ 
+        cout<<b[i][j]<<"\t";
+    }
+    cout<<endl<<endl;
+    }
+    cout<<"\nSum of two Matrices\n";
+    for(int i=0;i<2;i++)
+	 {
+    for (int j=0;j<2;j++)
+	{
+        cout<<a[i][j]+b[i][j]<<"\t";
+    }
+    cout<<endl;
+    }
+	return 0;
+}
