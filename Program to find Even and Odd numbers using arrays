@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[20],e[20],o[20];
+	cout<<"Enter 20 Numbers : "<<endl;
+	for(int i=0;i<20;i++)
+	{
+		cin>>a[i];
+	}
+	int k=0,l=0;
+	for(int i=0;i<20;i++)
+	{
+		if(a[i]%2==0)
+		{
+		e[k]=a[i];
+		k++;
+	    }
+	    else
+	    {
+	    	o[l]=a[i];
+	    	l++;
+		}
+	}
+	for(int i=0;i<k;i++)
+	{
+		cout<<"Even Number "<<e[i]<<endl;
+	}
+	for(int i=0;i<l;i++)
+	{
+		cout<<"Odd Number "<<o[i]<<endl;
+	}
+}
