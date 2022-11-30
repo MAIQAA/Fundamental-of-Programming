@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+    int a[10];
+    cout<<"Enter Unique Number : "<<endl;
+    for(int i=0;i<10;i++)
+    {
+        cin>>a[i];
+    }
+    int r;
+    cout<<"Enter a Random Number (0-9) : "<<endl;
+    cin>>r;
+    for(int i=r;i<9;i++)
+    {
+        a[i]=a[i+1];
+
+    }
+        a[r]=;
+        for(int i=0;i<10;i++)
+    {
+        cout<<a[i]<<"\t";
+    }
+
+}
