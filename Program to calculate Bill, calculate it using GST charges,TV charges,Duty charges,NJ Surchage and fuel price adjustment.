@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+{
+    int unit,GST,TV,SURCHARGE,f,d;
+    d=(unit-(unit*(d/100)));
+    cout<<"Enter the Unit Consmed :";
+    cin>>unit;
+    cout<<"Are you Filer (y/n) : ";
+    cin>>f;
+    cout<<"GST"<<'='<<53<<endl;
+    cout<<"TV"<<'='<<35<<endl;
+    cout<<"Duty Charges"<<'='<<13<<endl;
+    cout<<"NJ SURCHARGE"<<'='<<95<<endl;
+    cout<<"Fuel Price Adjustment"<<'='<<46<<endl;
+if(unit>=1 && unit<=100){
+    cout<<"Bill amount is: ";
+    cout<<unit*7+GST+TV+SURCHARGE; }
+else if(unit>=101 && unit<=200){
+        cout<<"Bill amount is: ";
+    cout<<(100*7)+(unit-100)*13.5+GST+TV+SURCHARGE;}
+else if(unit>=201 && unit<=300){
+    cout<<"Bill amount is: ";
+    cout<<(100*7)+(100*13.5)+(unit-200)*15+GST+TV+SURCHARGE;}
+else if(unit>=301 && unit<=400){
+    cout<<"Bill amount is: ";
+    cout<<(100*7)+(100*13.5)+(100*15)+(unit-300)*17+GST+TV+SURCHARGE;}
+else if(unit>=401 && unit<=500){
+    cout<<"Bill amount is: ";
+    cout<<(100*7)+(100*13.5)+(100*15)+(unit*17)+(unit-400)*19+GST+TV+SURCHARGE;} 
+else if(unit>=501){
+    cout<<"Bill amount is: ";
+    cout<<(100*7)+(100*13.5)+(100*15)+(unit*17)+(unit*19)+(unit-500)*23+GST+TV+SURCHARGE;}     
+else
+if(f=='y')
+cout<<"Discount= "<<d<<endl;
+else cout<<"Bill amount"<<unit; 
+}
