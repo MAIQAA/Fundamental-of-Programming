@@ -1,0 +1,25 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+ int s[7];
+ double a,p,t=0;
+ for(int i=0;i<7;i++)
+ {
+ cout<<"Please Enter the Marks of subect [" << i + 1 << "] : ";
+ cin>> s[i];
+ t=t+s[i];
+ if(s[i]>100)
+  {
+ cout<<"Please Enter the marks Less or equal to 100 "<<endl;
+ break;
+  }
+ }
+ cout<<endl;
+ a=(t/2)/10;
+ p=(t* 100)/1000;
+ cout<<"Aggregate of the student of 5 subjects is "<<a<<endl;
+ cout<<"Percentage of the student of 8 stubjects is "<< p<<endl;
+}
