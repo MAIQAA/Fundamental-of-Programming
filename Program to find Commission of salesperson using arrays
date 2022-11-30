@@ -1,0 +1,32 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+int i,sale=10,s=0;
+int range[]={ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+while (sale>0)
+{
+ cout<<"Please Enter the Sales of the Sales People (0 to end) : ";
+ cin>>sale;
+ if(sale>0)
+  {
+ s=200+(0.09*sale);
+ cout<<"Salary of the SalesPerson is : "<<s<< endl<<endl;
+ if(s>=600)
+   {
+    range[6]++;
+   }
+ else if(s>=200)
+   {
+    range[s/100]++;
+   }
+  }
+}
+ cout<<"Ranges of the Sales People that have Earned salaries "<<endl;
+for(i=1;i<10;i++)
+ {
+ cout<< i * 100<<" - "<<(i*100)+99<<" : "<< range[i]<<endl;
+ }
+}
