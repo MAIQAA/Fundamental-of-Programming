@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,b;
+	float sum;
+	cout<<"Enter value of A : "<<endl;
+	cin>>a;
+	cout<<"Enter value of B : "<<endl;
+	cin>>b;
+	cout<<"Sum of "<<"A"<<'+'<<"B"<<'='<<a+b;
+	
+}
