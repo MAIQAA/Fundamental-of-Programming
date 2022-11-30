@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a[5];
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+		cout<<"Enter Number : ";
+		cin>>a[i];
+	}
+	cout<<endl;
+	a[i]=a[j];
+	a[j]=a[i];
+	cout<<"Reverse order :";
+	for(i=5;i>=1;i--)
+	{
+		cout<<a[i]<<" ";
+	}
+}
