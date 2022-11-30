@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	cout<<"***Following Table Shows Max & Min Limit of Data Types***"<<endl<<endl;
+	cout<<"Max Int : "<<INT_MAX<<endl;
+	cout<<"Min Int : "<<INT_MIN<<endl;
+	cout<<"Max Unsigned Int : "<<UINT_MAX<<endl;
+	cout<<"Max LONGLONG : "<<LLONG_MAX<<endl;
+	cout<<"Min LONGLONG : "<<LLONG_MIN<<endl;
+	cout<<"Unsigned LONGLONG :"<<ULLONG_MAX<<endl;
+	cout<<"Bits in Char : "<<CHAR_BIT<<endl;
+	cout<<"Max Char : "<<CHAR_MAX<<endl;
+	cout<<"Min Char : "<<CHAR_MIN<<endl;
+	cout<<"Max Signed Char : "<<SCHAR_MAX<<endl;
+	cout<<"Min Signed Char : "<<SCHAR_MIN<<endl;
+	cout<<"Max Unsigned Char : "<<UCHAR_MAX<<endl;
+	cout<<"Min Short : "<<SHRT_MIN<<endl;
+	cout<<"Max Short : "<<SHRT_MAX<<endl;
+	cout<<"Max Unsigned Short : "<<USHRT_MAX<<endl;
+}
