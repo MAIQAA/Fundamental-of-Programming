@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float q,cost,b,unit=224;
+	cout<<"Enter the number of products :";
+	cin>>q;
+	cost=q*unit;
+	cout<<"Your bill is :"<<cost<<endl;
+	if(cost>1000)
+	{
+		b=cost-(cost*0.10);
+		cout<<"You won a discount"<<endl;
+		cout<<"Your bill now is :"<<b<<endl;
+	}
+}
+	
