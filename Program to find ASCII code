@@ -1,0 +1,18 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int n,r;
+	char c;
+	cout<<"How many ASCII codes you want to find : ";
+	cin>>r;
+	for(int i=1;i<=r;i++)
+	{
+	cout<<"Enter Character "<<i<<" : ";
+	cin>>c;
+	cout<<endl;
+	n=c;
+	cout<<"ASCII code for "<<c<<" is "<<n<<endl;
+    }
+}
